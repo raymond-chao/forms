@@ -6,6 +6,28 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <main>
+        <h1 class="main-title">Chips Form</h1>
+        <h2 class="main-info">What Chips Would You Eat?</h2>
+        <form class="form" autocomplete="off">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" class="input" placeholder="Sven Svensson">
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" class="input" placeholder="Svensvensson@gmail.com" required>
+            <div class="select-wrapper">
+                <label for="chips">Chips</label>
+                <select id="chips" name="chips" class="select">
+                    <option value="lays">Lays</option>
+                    <option value="pringles">Pringles</option>
+                    <option value="doritos">Doritos</option>
+                    <option value="cheetos">Estrella</option>
+                    <option value="ruffles">OLW</option>
+                </select>
+            </div>
+            <label for="passowrd">Password</label>
+            <input type="password" id="password" name="password" class="input" placeholder="********" required-minlength="8">
+        </form>
+    </main>
 </body>
 </html>
