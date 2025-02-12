@@ -2,7 +2,7 @@ body {
 margin: 0;
 padding: 0;
 font-family: "PT Serif", serif;
-background-image: url(images/chips2.webp);
+background-image: url(../images/chips1.jpg);
 background-position: center;
 background-size: cover;
 height: 100vh;
@@ -20,6 +20,9 @@ height: 100vh;
     color: black;
 }
 .form {
+    border-radius: 20px;
+    border: 2px solid black;
+    padding:20px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -46,3 +49,57 @@ input {
     color: #ffffff;
     transition: all 0.2s ease;
 }
+select {
+    width: 120px;
+    height: 30px;
+    padding: 5px;
+    font-size: 14px;
+    margin-top: 5px;
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid black;
+    background: white;
+    color: black;
+}
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .custom-checkbox input {
+    display: none;
+  }
+  
+  .custom-checkbox .checkmark {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #333;
+    border-radius: 4px;
+    display: inline-block;
+    position: relative;
+    margin-right: 8px;
+  }
+  .custom-checkbox input:checked + .checkmark {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+  }
+  
+  .custom-checkbox .checkmark::after {
+    content: "";
+    position: absolute;
+    left: 6px;
+    top: 2px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    display: none;
+  }
+  
+  .custom-checkbox input:checked + .checkmark::after {
+    display: block;
+  }
