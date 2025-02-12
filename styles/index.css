@@ -9,13 +9,13 @@ height: 100vh;
 }
 .main-title {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 10px;
     font-size: 50px;
     color: black;
 }
 .main-info {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
     font-size: 20px;
     color: black;
 }
@@ -102,4 +102,22 @@ select {
   
   .custom-checkbox input:checked + .checkmark::after {
     display: block;
+  }
+  button {
+    position:relative;
+    left: 50%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 20px 20px;
+    height: 40px;
+    width: 100px;
+    border-radius: 15px;
+    font-size: 20px;
+
+  }
+  button:hover {
+    background-color: black;
+    color: white;
   }
